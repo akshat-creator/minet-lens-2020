@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/747002666827382818/758284745360146492/dp__1_-removebg-preview.png" />
 
 </head>
 
@@ -14,7 +15,7 @@
 
     <div class="container">
        
-        <form class="form" name="submit-to-google-sheet"></form>>
+        <form class="form" name="submit-to-google-sheet"></form>
             <div class="logo">
             <img src="https://cdn.discordapp.com/attachments/747002666827382818/756908792926568568/New_Project_9.png" class="img-fluid" alt="Responsive image"></div>
             <div class="form-row">
@@ -171,6 +172,7 @@
         }
         .form-group{
             margin-top: 25px;
+            margin-bottom: 25px;
     
             
         }
@@ -179,23 +181,49 @@
            margin-left: 300px;
            height: 150px;
         }
-    
-        
+   
+        @media screen and (max-width: 1000px) {
+            .img-fluid{
+           margin-left: 50px;
+           height: 60px;
+        }
+            .btn-primary {
+            background-color: #6699ee;
+            border-color: #6699ee;
+            height: 40px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            margin-left: 10em;
+            outline: none;
+            width: 80px;
+            
+        }
+
+        }
+        @media screen and (max-width: 700px) {
+            .img-fluid{
+           margin-left: 50px;
+           height: 60px;
+        }
+            .btn-primary {
+            background-color: #6699ee;
+            border-color: #6699ee;
+            height: 40px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            margin-left: 8em;
+            outline: none;
+            width: 80px;
+            
+        }
+
+        }
     </style>
     <script>
         // Material Select Initialization
         $(document).ready(function () {
             $('.mdb-select').materialSelect();
         });
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbytOehMzLaekpGc2YQiBiw6sHApH3oRYwlBrQpWQoCrXKZ-7h0A/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
     </script>
 </body>
 
