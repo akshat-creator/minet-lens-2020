@@ -8,14 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/747002666827382818/758284745360146492/dp__1_-removebg-preview.png" />
-
 </head>
 
 <body>
 
     <div class="container">
-       
-        <form class="form" name="submit-to-google-sheet"></form>
+
+        <form class="form" name="submit-to-google-sheet">
             <div class="logo">
             <img src="https://cdn.discordapp.com/attachments/747002666827382818/756908792926568568/New_Project_9.png" class="img-fluid" alt="Responsive image"></div>
             <div class="form-row">
@@ -224,6 +223,16 @@
         $(document).ready(function () {
             $('.mdb-select').materialSelect();
         });
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwycnwxKiXiKegH0AxX4f_btIOW2gbb_nLmgcGCzdzD0u09WFZ_/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+
     </script>
 </body>
 
