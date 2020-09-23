@@ -23,17 +23,17 @@
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
+                    <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="">
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputPhone4">Mobile Number</label>
-                    <input type="password" class="form-control" id="inputphone4" placeholder="">
+                    <input name="phone" type="tel" class="form-control" id="inputphone4" placeholder="">
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-group col-md-6">
                     <label for="inputClass">Class</label>
-                    <select id="inputClass" class="form-control">
+                    <select id="inputClass" name= "class" class="form-control">
                         <option selected disabled>Class</option>
                         <option> 6</option>
                         <option>7</option>
@@ -48,7 +48,7 @@
             <div class="form-group">
                 <div class="form-group col-md-6">
                     <label for="inputSection">Section</label>
-                    <select id="inputSection" class="form-control">
+                    <select id="inputSection" name="section" class="form-control">
                         <option selected disabled>Section</option>
                         <option>A</option>
                         <option>B</option>
@@ -59,75 +59,74 @@
                     </select>
                 </div>
 
-            </div>
+            </div> 
             <div class="form-check-inline">
                 <p class="h5">What are you applying for?</p>
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Photography/cinematography
+                    <input type="checkbox" name="photography" class="form-check-input" value="true"> Photography/cinematography
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Creative Direction and Scripting
+                    <input type="checkbox" name="creative" class="form-check-input" value="true"> Creative Direction and Scripting
                 </label>
-            </div>
+            </div> 
             <div class="form-check-inline">
                 <p class="h5">Which of the following requisites to become a member of this club do you fulfil? (answer
                     only if applying for photography/cinematography)</p>
 
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Critical knowledge of a camera and its
+                    <input type="checkbox" name="r1" class="form-check-input" value="TRUE"> Critical knowledge of a camera and its
                     settings
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Being able to shoot on manual mode
+                    <input type="checkbox"  name="r2" class="form-check-input" value="TRUE"> Being able to shoot on manual mode
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Knowing how to compose a decent photograph
+                    <input type="checkbox"  name="r3" class="form-check-input" value="TRUE"> Knowing how to compose a decent photograph
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Basic knowledge of videography
+                    <input type="checkbox"  name="r4" class="form-check-input" value="TRUE"> Basic knowledge of videography
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> A creative mindset
+                    <input type="checkbox" name="r5" class="form-check-input" value="TRUE"> A creative mindset
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Rudimentary knowledge of photo editing
+                    <input type="checkbox"  name="r6" class="form-check-input" value="TRUE"> Rudimentary knowledge of photo editing
                 </label>
-            </div>
+            </div> 
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Which photo/video editing software(s) are you
                     familiar with?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                <input class="form-control" name="q1" id="exampleFormControlTextarea1" rows="1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">What kind of gear do you use? (Camera type and model, lenses,
                     flashes, filters, any other photography/film-making related equipment that you possess) </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                <input class="form-control" name="q2" id="exampleFormControlTextarea1" rows="1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">What are the qualities of an ideal
                     photographer/cinematographer/director? (only fill for the post you are applying for)</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div>
+                <input class="form-control" name="q3" id="exampleFormControlTextarea1" rows="2">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">What about you makes you stand out and perhaps better than the
                     other contenders applying for the same post?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                <input class="form-control" name="q4" id="exampleFormControlTextarea1" rows="2">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">How would you describe your style of work?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                <input class="form-control" name="q5" id="exampleFormControlTextarea1" rows="2">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Please compile your portfolio on Google Drive and share the
                     link below. Include original and creative work. ?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                <input class="form-control" name="q6" id="exampleFormControlTextarea1" rows="1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Lastly, do you have any creative work experience? If yes,
                     please mention. </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                <input class="form-control" name="q7" id="exampleFormControlTextarea1" rows="2">
             </div> 
-            <button type="submit" class="btn-primary">Sumbit</button>
+            <button type="submit" class="btn-primary">Sumbit</button><!-- onClick="window.location.reload();"-->
         </form>
     </div>
     <style>
