@@ -13,7 +13,7 @@
 <body>
     <div class="container">
 
-        <form class="form" name="submit-to-google-sheet">
+        <form class="form" name="submit-to-google-sheet" id="submit-to-google-sheet">
             <div class="logo">
             <img src="https://cdn.discordapp.com/attachments/747002666827382818/756908792926568568/New_Project_9.png" class="img-fluid" alt="Responsive image"></div>
             <div class="form-row">
@@ -126,7 +126,7 @@
                     please mention. </label>
                 <input class="form-control" name="q7" id="exampleFormControlTextarea1" rows="2">
             </div> 
-            <button type="submit" class="btn-primary" onClick="window.location.reload();">Sumbit</button>
+            <button type="submit" class="btn-primary" >Sumbit</button>
         </form>
     </div>
     <style>
@@ -146,7 +146,7 @@
         }
 
         .btn-primary {
-            background-color: #6699ee;
+          
             border-color: #6699ee;
             height: 40px;
             margin-bottom: 15px;
@@ -154,11 +154,25 @@
             margin-left: 37em;
             outline: none;
             width: 80px;
+              /* -webkit-box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6);
+    -moz-box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6);
+    box-shadow: 0px 8px 20px 7px rgba(56, 123, 217, 0.6); */
+    box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
+    background-color: #6699ee;
+    color: #fff;
+    border: none;
+    transform: translateY(-4px);
+    transition: 0.5s;
+    /* box-shadow: 30px 30px 59px #cccccc, -30px -30px 59px #ffffff; */
         }
 
         .btn-primary:hover {
             background-color: #6699ee;
             outline: none;
+            transform: translateY(0px);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 
         }
 
@@ -230,7 +244,11 @@
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
     })
+    document.getElementById("submit-to-google-sheet").addEventListener("submit", myFunction);
 
+function myFunction() {
+  alert("The form was submitted");
+}
     </script>
 </body>
 
