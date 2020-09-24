@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/747002666827382818/758284745360146492/dp__1_-removebg-preview.png" />
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/747002666827382818/758284745360146492/dp__1_-removebg-preview.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="container">
 
-        <form class="form" name="submit-to-google-sheet">
+        <form class="form " name="submit-to-google-sheet" id="submit-to-google-sheet">
             <div class="logo">
-            <img src="https://cdn.discordapp.com/attachments/747002666827382818/756908792926568568/New_Project_9.png" class="img-fluid" alt="Responsive image"></div>
+                <img src="https://cdn.discordapp.com/attachments/747002666827382818/758737124538187796/rsz_new_project_9.png"
+                    class="img-fluid" alt="Responsive image"></div>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    s
+                    <label for="inputname4">Name</label>
+                    <input name="name" type="text" class="form-control" id="inputname4" placeholder="" required>
                 </div>
-            
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="" required>
+                </div>
                 <div class="form-group col-md-4">
                     <label for="inputPhone4">Mobile Number</label>
-                    <input type="password" class="form-control" id="inputphone4" placeholder="">
+                    <input name="phone" type="tel" class="form-control" id="inputphone4" placeholder="" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-group col-md-6">
                     <label for="inputClass">Class</label>
-                    <select id="inputClass" class="form-control">
+                    <select id="inputClass" name="class" class="form-control">
                         <option selected disabled>Class</option>
                         <option> 6</option>
                         <option>7</option>
@@ -45,7 +51,7 @@
             <div class="form-group">
                 <div class="form-group col-md-6">
                     <label for="inputSection">Section</label>
-                    <select id="inputSection" class="form-control">
+                    <select id="inputSection" name="section" class="form-control">
                         <option selected disabled>Section</option>
                         <option>A</option>
                         <option>B</option>
@@ -57,106 +63,136 @@
                 </div>
 
             </div>
+            <div class="lmao">
             <div class="form-check-inline">
                 <p class="h5">What are you applying for?</p>
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Photography/cinematography
+                    <input type="checkbox" name="photography" class="form-check-input" value="true">
+                    Photography/cinematography
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Creative Direction and Scripting
+                    <input type="checkbox" name="creative" class="form-check-input" value="true"> Creative Direction and
+                    Scripting
                 </label>
+            </div>
             </div>
             <div class="form-check-inline">
                 <p class="h5">Which of the following requisites to become a member of this club do you fulfil? (answer
                     only if applying for photography/cinematography)</p>
 
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Critical knowledge of a camera and its
+                    <input type="checkbox" name="r1" class="form-check-input" value="TRUE"> Critical knowledge of a
+                    camera and its
                     settings
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Being able to shoot on manual mode
+                    <input type="checkbox" name="r2" class="form-check-input" value="TRUE"> Being able to shoot on
+                    manual mode
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Knowing how to compose a decent photograph
+                    <input type="checkbox" name="r3" class="form-check-input" value="TRUE"> Knowing how to compose a
+                    decent photograph
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Basic knowledge of videography
+                    <input type="checkbox" name="r4" class="form-check-input" value="TRUE"> Basic knowledge of
+                    videography
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> A creative mindset
+                    <input type="checkbox" name="r5" class="form-check-input" value="TRUE"> A creative mindset
                 </label><br />
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value=""> Rudimentary knowledge of photo editing
+                    <input type="checkbox" name="r6" class="form-check-input" value="TRUE"> Rudimentary knowledge of
+                    photo editing
                 </label>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Which photo/video editing software(s) are you
                     familiar with?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                <input class="form-control" name="q1" id="exampleFormControlTextarea1" rows="1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">What kind of gear do you use? (Camera type and model, lenses,
                     flashes, filters, any other photography/film-making related equipment that you possess) </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                <input class="form-control" name="q2" id="exampleFormControlTextarea1" rows="1">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">What are the qualities of an ideal
                     photographer/cinematographer/director? (only fill for the post you are applying for)</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">What about you makes you stand out and perhaps better than the
-                    other contenders applying for the same post?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">How would you describe your style of work?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Please compile your portfolio on Google Drive and share the
-                    link below. Include original and creative work. ?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Lastly, do you have any creative work experience? If yes,
-                    please mention. </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div> 
-            <button type="submit" class="btn-primary">Sumbit</button>
+                <input class="form-control" name="q3" id="exampleFormControlTextarea1" rows="2">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">What about you makes you stand out and perhaps better than
+                        the
+                        other contenders applying for the same post?</label>
+                    <input class="form-control" name="q4" id="exampleFormControlTextarea1" rows="2">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">How would you describe your style of work?</label>
+                    <input class="form-control" name="q5" id="exampleFormControlTextarea1" rows="2">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Please compile your portfolio on Google Drive and share the
+                        link below. Include original and creative work.</label>
+                    <input class="form-control" name="q6" id="exampleFormControlTextarea1" rows="1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Lastly, do you have any creative work experience? If yes,
+                        please mention. </label>
+                    <input class="form-control" name="q7" id="exampleFormControlTextarea1" rows="2">
+                </div>
+          
+                    <button type="submit" class="btn-primary">Sumbit</button>
+
         </form>
     </div>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+        
         body {
-            font-family: 'Montserrat', sans-serif;
-            
+            font-family: 'Nunito', sans-serif;
+
             background-color: #fafafa;
         }
-        .h5{
-            font-weight: bold; 
+        
+        .h5 {
+            font-weight: bold;
 
         }
-        .form-check-inline{
+
+
+        .form-check-inline {
             margin-top: 25px;
         }
 
         .btn-primary {
-            background-color: #6699ee;
+
             border-color: #6699ee;
             height: 40px;
-            margin-bottom: 15px;
+            margin-top: 35px;
+          
             border-radius: 10px;
             margin-left: 37em;
             outline: none;
             width: 80px;
+  
+            box-shadow: 0px 8px 32px rgba(56, 123, 217, 0.6);
+            background-color: #6699ee;
+            color: #fff;
+            border: none;
+            transform: translateY(-4px);
+            transition: 0.5s;
+
+            margin-left: auto;
+     margin-right: auto;
+  display: block;
+            
         }
 
         .btn-primary:hover {
             background-color: #6699ee;
             outline: none;
+            transform: translateY(0px);
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
 
         }
 
@@ -165,70 +201,75 @@
             margin-bottom: 40px;
 
         }
-        .form-group{
-            margin-top: 25px;
-            margin-bottom: 25px;
+
+        .form-group {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+
+        }
+
+      
+ 
+        .logo {
+            background-color: none;
+            
+        }
+        .logo img{
+            margin-left: auto;
+  margin-right: auto;
+  display: block;
+        }
+
+        .lmao{
+            margin-top: 200px;
+        }
+       
+        @media screen and (max-width: 1300px) {
+      
     
+            .lmao{
+            margin-top: 20px;
+        }
             
+    
         }
-        
-        .img-fluid{
-           margin-left: 300px;
-           height: 150px;
-        }
-   
-        @media screen and (max-width: 1000px) {
-            .img-fluid{
-           margin-left: 50px;
-           height: 60px;
-        }
-            .btn-primary {
-            background-color: #6699ee;
-            border-color: #6699ee;
-            height: 40px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            margin-left: 10em;
-            outline: none;
-            width: 80px;
+
+        @media screen and (max-width: 850px) {
             
+
+            .lmao{
+            margin-top: 20px;
+        }
+        .logo img{
+            margin-left: auto;
+            margin-right: auto;
+             display: block;
+            width: 60%;
         }
 
         }
-        @media screen and (max-width: 700px) {
-            .img-fluid{
-           margin-left: 50px;
-           height: 60px;
-        }
-            .btn-primary {
-            background-color: #6699ee;
-            border-color: #6699ee;
-            height: 40px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            margin-left: 8em;
-            outline: none;
-            width: 80px;
-            
-        }
-
-        }
+      
     </style>
     <script>
         // Material Select Initialization
         $(document).ready(function () {
             $('.mdb-select').materialSelect();
         });
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwycnwxKiXiKegH0AxX4f_btIOW2gbb_nLmgcGCzdzD0u09WFZ_/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwycnwxKiXiKegH0AxX4f_btIOW2gbb_nLmgcGCzdzD0u09WFZ_/exec'
+        const form = document.forms['submit-to-google-sheet']
 
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+        document.getElementById("submit-to-google-sheet").addEventListener("submit", myFunction);
+
+        function myFunction() {
+            alert("The form was submitted");
+        }
     </script>
 </body>
 
