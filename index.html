@@ -154,6 +154,10 @@
                 <button type="submit" class="btn-primary" href="http://api.minet.co/">Sumbit</button>
 
         </form>
+        <div class="contact">
+            <a href="https://www.instagram.com/minetlens/" >
+            <img src="https://cdn.discordapp.com/attachments/747002666827382818/766991619202351104/dp__1_-removebg-preview_1.png" alt="" class="icon"></a>
+        </div>
     </div>
     <style>
         body {
@@ -252,7 +256,12 @@
         .form-control {
             margin-top: 5px;
         }
-
+        .form-control:focus{
+            background: #ffffff;
+            box-shadow:  -10px -10px 21px #d9d9d9, 
+             10px 10px 21px #ffffff;
+             border-color: #6699ee;
+        }
         .logo {
             background-color: none;
 
@@ -271,6 +280,26 @@
         .longq {
 
             width: 98%;
+        }
+        .contact{
+            display: flex;
+            align-items: right;
+        }
+        .icon{
+            position: fixed;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom:20px;
+    background-color: #6699ee;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    cursor: pointer;
+    display: block;
         }
 
         @media screen and (max-width: 1300px) {
